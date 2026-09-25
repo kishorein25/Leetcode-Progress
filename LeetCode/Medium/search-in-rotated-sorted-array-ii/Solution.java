@@ -8,10 +8,10 @@
                 l=mid+1;
             }
 
-            else if(nums[mid] > t){
-                r = mid-1;
 
         while (l < r) {
+            else {
+                r = mid-1;
+            }
+        }
 
-        int mid;
-        int r = nums.length - 1;
