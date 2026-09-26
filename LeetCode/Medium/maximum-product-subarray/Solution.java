@@ -4,10 +4,10 @@ class Solution {
         for(int i=1;i<nums.length;i++){
             int product = nums[i] * nums[i-1];
             if(product > maxv){
-                maxv= product;
-            }
+
+
+
+
+        if(nums.length==1){
+            return nums[0];
         }
-        return maxv;
-    }
-            if(nums.length == 1) return nums[0];
-}
