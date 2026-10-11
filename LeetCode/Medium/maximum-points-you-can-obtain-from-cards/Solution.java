@@ -1,19 +1,19 @@
-        int start = 0;
-        int end = 0;
-
         for(int i=0;i<k;i++){
-            start = start + cardPoints[i];
+            left += cardPoints[i];
         }
 
-        for(int j = cardPoints.length-1;j >= cardPoints.length-k;j--){
+        max = left;
+        for(int j = k-1;j>= 0;j--){
+
+        int index = cardPoints.length-1;
+            right +=cardPoints[index];
+            index--;
+            left -=cardPoints[j];
+            max = Math.max(max , left+right);
+
         int max = 0;
-            end = end + cardPoints[j];
-        } 
-    }
 
-        max = start < end ? end : start;
+        }
         return max;
+    }
 }
-
-    public int maxScore(int[] cardPoints, int k) {
-class Solution {
