@@ -9,10 +9,10 @@
                 j++;
 
             hs.add(cur);
-            max = Math.max(max , i-j+1);
-        }
         HashSet<Character> hs = new HashSet<>();
         int max = 0;
-        int j= 0;
-        int n = s.length()-1;
-
+            max = Math.max(max , i-j +1);
+        }
+        return max;        
+    }
+}
